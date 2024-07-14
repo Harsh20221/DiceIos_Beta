@@ -11,12 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
    
-    @IBOutlet weak var DiceController1: UIImageView!
+    @IBOutlet var Img1conn: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        Img1conn.image=UIImage(named: "DiceTwo") ////This is how yo can link you Images to the Dice APP , tHIS IS THE NEW WAY and the Current Working Way
     }
-
-
 }
 
