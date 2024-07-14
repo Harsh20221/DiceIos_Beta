@@ -11,11 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
    
+    @IBAction func RollButton(_ sender: UIButton) {
+        Img1conn.image=UIImage(named:"DiceFour")
+        Img2conn.image=UIImage(named: "DiceFour")
+        
+    }
+    @IBOutlet var Img2conn: UIImageView!
     @IBOutlet var Img1conn: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Img1conn.image=UIImage(named: "DiceTwo") ////This is how yo can link you Images to the Dice APP , tHIS IS THE NEW WAY and the Current Working Way
+      ///  Img1conn.image=UIImage(named: "DiceTwo") ////This is how yo can link you Images to the Dice APP , tHIS IS THE NEW WAY and the Current Working Way
+        ///
     }
 }
 
