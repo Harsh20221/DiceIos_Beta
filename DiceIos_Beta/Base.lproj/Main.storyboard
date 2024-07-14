@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="DiceController1" destination="hGr-Ch-KPu" id="cve-0R-0uc"/>
+                        <outlet property="dicecontroller1" destination="hGr-Ch-KPu" id="GMj-42-uXI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
