@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var dicecontroller1: UIImageView!
+   
     @IBOutlet weak var DiceController1: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
