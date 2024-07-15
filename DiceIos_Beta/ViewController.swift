@@ -9,15 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var leftdicecontroller=0; //? These are Two Global Variables 
-    var rightdicecontroller=5;
+   /* var leftdicecontroller=0; //? These are Two Global Variables
+    var rightdicecontroller=5;*/
    
     @IBAction func RollButton(_ sender: UIButton) {   //? This Ib action checks for Roll Dice Movements
         ///? This is How you'll Define an Array In Swift
-        Img1conn.image=[UIImage(named:"DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")][leftdicecontroller]
-        Img2conn.image=[UIImage(named:"DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")][rightdicecontroller]
-        leftdicecontroller+=1;
-        rightdicecontroller-=1;
+        let dicearray=[UIImage(named:"DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")]
+        Img1conn.image=dicearray[Int.random(in:0...5)]
+        Img2conn.image=dicearray[Int.random(in:0...5 )]
+       /*leftdicecontroller+=1;
+        rightdicecontroller-=1;*/
         
     }
     @IBOutlet var Img2conn: UIImageView! //? These are Connectors for Both  Dice Images
