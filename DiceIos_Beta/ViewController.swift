@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func RollButton(_ sender: UIButton) {   //? This Ib action checks for Roll Dice Movements
         ///? This is How you'll Define an Array In Swift
         let dicearray=[UIImage(named:"DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")]
-        Img1conn.image=dicearray[Int.random(in:0...5)]
+        Img1conn.image=dicearray[Int.random(in:0...5)] //? This is how you use the random method in swift , It generates random numbers between 0 and 5 where both 0 and 5 are included 
         Img2conn.image=dicearray[Int.random(in:0...5 )]
        /*leftdicecontroller+=1;
         rightdicecontroller-=1;*/
