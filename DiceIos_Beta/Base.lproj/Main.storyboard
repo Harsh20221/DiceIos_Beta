@@ -62,7 +62,10 @@
                                         <rect key="frame" x="0.0" y="296.66666666666669" width="814" height="146.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-db-uqb">
-                                                <rect key="frame" x="368" y="46" width="78" height="54.666666666666657"/>
+                                                <rect key="frame" x="357" y="46" width="100" height="54.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="b28-WK-6db"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Roll">
                                                     <backgroundConfiguration key="background">
